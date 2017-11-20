@@ -1,0 +1,174 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.emc.metalnx</groupId>
+	<artifactId>IntegrationTests</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.25</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.25</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.11</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.7.1</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-chrome-driver</artifactId>
+			<version>3.6.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-support</artifactId>
+			<version>3.6.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>23.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.irods.jargon</groupId>
+			<artifactId>jargon-core</artifactId>
+			<version>4.2.1.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.6.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.20</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<!-- <suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile> -->
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+			
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+			<executions>
+				<execution>
+					<!-- generate jargon test properties as standard -->
+					<id>0</id>
+					<phase>validate</phase>
+					<configuration>
+						<tasks>
+							<delete file="${basedir}/src/test/resources/testing.properties" />
+							<touch file="${basedir}/src/test/resources/testing.properties"
+								mkdirs="true" />
+							<echo file="${basedir}/src/test/resources/testing.properties"
+								append="true">
+								test.data.directory=${jargon.test.data.directory}
+								test.irods.admin=${jargon.test.irods.admin}
+								test.irods.admin.password=${jargon.test.irods.admin.password}
+								test.irods.user=${jargon.test.irods.user}
+								test.irods.password=${jargon.test.irods.password}
+								test.irods.resource=${jargon.test.irods.resource}
+								test2.irods.user=${jargon.test.irods.user2}
+								test2.irods.password=${jargon.test.irods.password2}
+								test2.irods.resource=${jargon.test.irods.resource2}
+								test3.irods.user=${jargon.test.irods.user3}
+								test3.irods.password=${jargon.test.irods.password3}
+								test3.irods.resource=${jargon.test.irods.resource3}
+								test.irods.host=${jargon.test.irods.host}
+								test.resource.host=${jargon.test.resource.host}
+								test.irods.port=${jargon.test.irods.port}
+								test.irods.zone=${jargon.test.irods.zone}
+								jargon.test.kerberos.user=${jargon.test.kerberos.user}
+								jargon.test.user.group=${jargon.test.user.group}
+								test.resource.group=${jargon.test.resource.group}
+								test.irods.userDN=${jargon.test.irods.userDN}
+								test.irods.scratch.subdir=${jargon.test.irods.scratch.subdir}
+								test.option.exercise.remoteexecstream=${jargon.test.option.exercise.remoteexecstream}
+								test.option.eirods=${test.option.eirods}
+								test.option.exercise.audit=${jargon.test.option.exercise.audit}
+								test.option.exercise.workflow=${jargon.test.option.exercise.workflow}
+								test.option.exercise.filesystem.mount=${jargon.test.option.exercise.filesystem.mount}
+								test.option.exercise.filesystem.mount.local=${jargon.test.option.exercise.filesystem.mount.local}
+								test.option.distributed.resources=${test.option.distributed.resources}
+								test.option.registration=${test.option.registration}
+								test.option.strictACL=${test.option.strictACL}
+								test.option.federated.zone=${test.option.federated.zone}
+								test.option.kerberos=${test.option.kerberos}
+								test.option.pam=${test.option.pam}
+								test.option.ssl.configured=${test.option.ssl.configured}
+								jargon.test.pam.user=${jargon.test.pam.user}
+								jargon.test.pam.password=${jargon.test.pam.password}
+								test.federated.irods.admin=${jargon.test.federated.irods.admin}
+								test.federated.irods.admin.password=${jargon.test.federated.irods.admin.password}
+								test.federated.irods.user=${jargon.test.federated.irods.user}
+								test.federated.irods.password=${jargon.test.federated.irods.password}
+								test.federated.irods.resource=${jargon.test.federated.irods.resource}
+								test.federated.irods.host=${jargon.test.federated.irods.host}
+								test.federated.irods.port=${jargon.test.federated.irods.port}
+								test.federated.irods.zone=${jargon.test.federated.irods.zone}
+								test.option.gsi=${test.option.gsi}
+								test.option.gsi.host=${test.option.gsi.host}
+								test.option.gsi.port=${test.option.gsi.port}
+								test.option.gsi.zone=${test.option.gsi.zone}
+								test.option.gsi.dn=${test.option.gsi.dn}
+								test.option.gsi.user=${test.option.gsi.user}
+								test.option.gsi.file=${test.option.gsi.file}
+								test.option.mount.basedir=${test.option.mount.basedir}
+								test.option.python=${test.option.python}
+								selenium.test.chrome.driver=${selenium.test.chrome.driver}
+								selenium.test.chrome.driver.loaction=${selenium.test.chrome.driver.loaction}
+							</echo>
+						</tasks>
+					</configuration>
+					<goals>
+						<goal>run</goal>
+					</goals>
+				</execution>
+
+
+			</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
