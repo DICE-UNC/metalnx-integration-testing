@@ -119,9 +119,7 @@ public class UiTestUtilities {
 	}
 
 	public static WebDriver getDriver() {
-		System.setProperty("webdriver.chrome.driver", "C:/Users/pateldes/driver/chromedriver.exe");
-		// System.setProperty(testingProperties.getProperty(CHROME_DRIVER),
-		// testingProperties.getProperty(CHROME_DRIVER_LOCATION));
+		System.setProperty(testingProperties.getProperty(CHROME_DRIVER), testingProperties.getProperty(CHROME_DRIVER_LOCATION));
 		// return driver == null ? new FirefoxDriver() : driver;
 		return driver == null ? new ChromeDriver() : driver;
 	}

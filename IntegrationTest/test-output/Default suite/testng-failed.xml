@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.emc.metalnx.integration.test.healthcheck.HealthCheckTest">
+        <methods>
+          <include name="testGotoRules"/>
+          <include name="testGotoProfile"/>
+          <include name="tearDown"/>
+          <include name="testGotoTrash"/>
+          <include name="testGotoUsers"/>
+          <include name="testGotoGroups"/>
+          <include name="testGotoTemplates"/>
+          <include name="testGotoTickets"/>
+          <include name="testGotoSearch"/>
+          <include name="setUp"/>
+          <include name="beforeClass"/>
+          <include name="testGotoDashboard"/>
+          <include name="testGotoPublic"/>
+          <include name="testGotoResources"/>
+          <include name="testGotoFavorites"/>
+          <include name="testGotoCollections"/>
+          <include name="tearDownAfterClass"/>
+        </methods>
+      </class> <!-- com.emc.metalnx.integration.test.healthcheck.HealthCheckTest -->
+      <class name="com.emc.metalnx.integration.test.login.LoginTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="testInvalidUsernameAndPasswordForLogin"/>
+          <include name="afterClass"/>
+          <include name="testValidUsernameAndPasswordForLogin"/>
+        </methods>
+      </class> <!-- com.emc.metalnx.integration.test.login.LoginTest -->
+      <class name="com.emc.metalnx.integration.test.login.AdminLoginTest">
+        <methods>
+          <include name="testLoginAsAdmin"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.emc.metalnx.integration.test.login.AdminLoginTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
