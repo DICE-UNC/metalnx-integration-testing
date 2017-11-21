@@ -2,112 +2,112 @@
 <testng-results skipped="0" failed="0" ignored="0" total="16" passed="16">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="30249" started-at="2017-11-20T17:25:47Z" finished-at="2017-11-20T17:26:17Z">
+  <suite name="Default suite" duration-ms="36856" started-at="2017-11-20T19:20:14Z" finished-at="2017-11-20T19:20:51Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="30249" started-at="2017-11-20T17:25:47Z" finished-at="2017-11-20T17:26:17Z">
+    <test name="Default test" duration-ms="36856" started-at="2017-11-20T19:20:14Z" finished-at="2017-11-20T19:20:51Z">
       <class name="com.emc.metalnx.integration.test.login.AdminLoginTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.emc.metalnx.integration.test.login.AdminLoginTest@63753b6d]" name="beforeClass" is-config="true" duration-ms="2541" started-at="2017-11-20T12:25:55Z" finished-at="2017-11-20T12:25:58Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.emc.metalnx.integration.test.login.AdminLoginTest@1f28c152]" name="beforeClass" is-config="true" duration-ms="4103" started-at="2017-11-20T14:20:14Z" finished-at="2017-11-20T14:20:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="testLoginAsAdmin()[pri:0, instance:com.emc.metalnx.integration.test.login.AdminLoginTest@63753b6d]" name="testLoginAsAdmin" duration-ms="3179" started-at="2017-11-20T12:25:58Z" finished-at="2017-11-20T12:26:01Z">
+        <test-method status="PASS" signature="testLoginAsAdmin()[pri:0, instance:com.emc.metalnx.integration.test.login.AdminLoginTest@1f28c152]" name="testLoginAsAdmin" duration-ms="4514" started-at="2017-11-20T14:20:18Z" finished-at="2017-11-20T14:20:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginAsAdmin -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.emc.metalnx.integration.test.login.AdminLoginTest@63753b6d]" name="afterClass" is-config="true" duration-ms="676" started-at="2017-11-20T12:26:01Z" finished-at="2017-11-20T12:26:02Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.emc.metalnx.integration.test.login.AdminLoginTest@1f28c152]" name="afterClass" is-config="true" duration-ms="741" started-at="2017-11-20T14:20:22Z" finished-at="2017-11-20T14:20:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.emc.metalnx.integration.test.login.AdminLoginTest -->
       <class name="com.emc.metalnx.integration.test.login.LoginTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.emc.metalnx.integration.test.login.LoginTest@5f9d02cb]" name="beforeClass" is-config="true" duration-ms="4107" started-at="2017-11-20T12:25:47Z" finished-at="2017-11-20T12:25:51Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.emc.metalnx.integration.test.login.LoginTest@7d907bac]" name="beforeClass" is-config="true" duration-ms="3698" started-at="2017-11-20T14:20:41Z" finished-at="2017-11-20T14:20:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="testInvalidUsernameAndPasswordForLogin()[pri:0, instance:com.emc.metalnx.integration.test.login.LoginTest@5f9d02cb]" name="testInvalidUsernameAndPasswordForLogin" duration-ms="2426" started-at="2017-11-20T12:25:51Z" finished-at="2017-11-20T12:25:53Z">
+        <test-method status="PASS" signature="testInvalidUsernameAndPasswordForLogin()[pri:0, instance:com.emc.metalnx.integration.test.login.LoginTest@7d907bac]" name="testInvalidUsernameAndPasswordForLogin" duration-ms="2995" started-at="2017-11-20T14:20:45Z" finished-at="2017-11-20T14:20:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidUsernameAndPasswordForLogin -->
-        <test-method status="PASS" signature="testValidUsernameAndPasswordForLogin()[pri:0, instance:com.emc.metalnx.integration.test.login.LoginTest@5f9d02cb]" name="testValidUsernameAndPasswordForLogin" duration-ms="1471" started-at="2017-11-20T12:25:53Z" finished-at="2017-11-20T12:25:55Z">
+        <test-method status="PASS" signature="testValidUsernameAndPasswordForLogin()[pri:0, instance:com.emc.metalnx.integration.test.login.LoginTest@7d907bac]" name="testValidUsernameAndPasswordForLogin" duration-ms="2007" started-at="2017-11-20T14:20:48Z" finished-at="2017-11-20T14:20:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidUsernameAndPasswordForLogin -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.emc.metalnx.integration.test.login.LoginTest@5f9d02cb]" name="afterClass" is-config="true" duration-ms="640" started-at="2017-11-20T12:25:55Z" finished-at="2017-11-20T12:25:55Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.emc.metalnx.integration.test.login.LoginTest@7d907bac]" name="afterClass" is-config="true" duration-ms="773" started-at="2017-11-20T14:20:50Z" finished-at="2017-11-20T14:20:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.emc.metalnx.integration.test.login.LoginTest -->
       <class name="com.emc.metalnx.integration.test.healthcheck.HealthCheckTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@370736d9]" name="setUp" is-config="true" duration-ms="7" started-at="2017-11-20T12:25:47Z" finished-at="2017-11-20T12:25:47Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@369f73a2]" name="setUp" is-config="true" duration-ms="7" started-at="2017-11-20T14:20:14Z" finished-at="2017-11-20T14:20:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@370736d9]" name="beforeClass" is-config="true" duration-ms="5446" started-at="2017-11-20T12:26:02Z" finished-at="2017-11-20T12:26:07Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@369f73a2]" name="beforeClass" is-config="true" duration-ms="8477" started-at="2017-11-20T14:20:23Z" finished-at="2017-11-20T14:20:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="testGotoCollections()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@370736d9]" name="testGotoCollections" duration-ms="1224" started-at="2017-11-20T12:26:07Z" finished-at="2017-11-20T12:26:09Z">
+        <test-method status="PASS" signature="testGotoCollections()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@369f73a2]" name="testGotoCollections" duration-ms="748" started-at="2017-11-20T14:20:32Z" finished-at="2017-11-20T14:20:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGotoCollections -->
-        <test-method status="PASS" signature="testGotoDashboard()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@370736d9]" name="testGotoDashboard" duration-ms="1215" started-at="2017-11-20T12:26:09Z" finished-at="2017-11-20T12:26:10Z">
+        <test-method status="PASS" signature="testGotoDashboard()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@369f73a2]" name="testGotoDashboard" duration-ms="1103" started-at="2017-11-20T14:20:32Z" finished-at="2017-11-20T14:20:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGotoDashboard -->
-        <test-method status="PASS" signature="testGotoFavorites()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@370736d9]" name="testGotoFavorites" duration-ms="734" started-at="2017-11-20T12:26:10Z" finished-at="2017-11-20T12:26:10Z">
+        <test-method status="PASS" signature="testGotoFavorites()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@369f73a2]" name="testGotoFavorites" duration-ms="508" started-at="2017-11-20T14:20:33Z" finished-at="2017-11-20T14:20:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGotoFavorites -->
-        <test-method status="PASS" signature="testGotoGroups()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@370736d9]" name="testGotoGroups" duration-ms="575" started-at="2017-11-20T12:26:10Z" finished-at="2017-11-20T12:26:11Z">
+        <test-method status="PASS" signature="testGotoGroups()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@369f73a2]" name="testGotoGroups" duration-ms="434" started-at="2017-11-20T14:20:34Z" finished-at="2017-11-20T14:20:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGotoGroups -->
-        <test-method status="PASS" signature="testGotoProfile()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@370736d9]" name="testGotoProfile" duration-ms="533" started-at="2017-11-20T12:26:11Z" finished-at="2017-11-20T12:26:12Z">
+        <test-method status="PASS" signature="testGotoProfile()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@369f73a2]" name="testGotoProfile" duration-ms="384" started-at="2017-11-20T14:20:34Z" finished-at="2017-11-20T14:20:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGotoProfile -->
-        <test-method status="PASS" signature="testGotoPublic()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@370736d9]" name="testGotoPublic" duration-ms="635" started-at="2017-11-20T12:26:12Z" finished-at="2017-11-20T12:26:12Z">
+        <test-method status="PASS" signature="testGotoPublic()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@369f73a2]" name="testGotoPublic" duration-ms="759" started-at="2017-11-20T14:20:35Z" finished-at="2017-11-20T14:20:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGotoPublic -->
-        <test-method status="PASS" signature="testGotoResources()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@370736d9]" name="testGotoResources" duration-ms="1096" started-at="2017-11-20T12:26:12Z" finished-at="2017-11-20T12:26:13Z">
+        <test-method status="PASS" signature="testGotoResources()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@369f73a2]" name="testGotoResources" duration-ms="1479" started-at="2017-11-20T14:20:36Z" finished-at="2017-11-20T14:20:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGotoResources -->
-        <test-method status="PASS" signature="testGotoRules()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@370736d9]" name="testGotoRules" duration-ms="462" started-at="2017-11-20T12:26:13Z" finished-at="2017-11-20T12:26:14Z">
+        <test-method status="PASS" signature="testGotoRules()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@369f73a2]" name="testGotoRules" duration-ms="552" started-at="2017-11-20T14:20:37Z" finished-at="2017-11-20T14:20:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGotoRules -->
-        <test-method status="PASS" signature="testGotoSearch()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@370736d9]" name="testGotoSearch" duration-ms="570" started-at="2017-11-20T12:26:14Z" finished-at="2017-11-20T12:26:14Z">
+        <test-method status="PASS" signature="testGotoSearch()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@369f73a2]" name="testGotoSearch" duration-ms="609" started-at="2017-11-20T14:20:38Z" finished-at="2017-11-20T14:20:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGotoSearch -->
-        <test-method status="PASS" signature="testGotoTemplates()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@370736d9]" name="testGotoTemplates" duration-ms="349" started-at="2017-11-20T12:26:14Z" finished-at="2017-11-20T12:26:15Z">
+        <test-method status="PASS" signature="testGotoTemplates()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@369f73a2]" name="testGotoTemplates" duration-ms="493" started-at="2017-11-20T14:20:38Z" finished-at="2017-11-20T14:20:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGotoTemplates -->
-        <test-method status="PASS" signature="testGotoTickets()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@370736d9]" name="testGotoTickets" duration-ms="389" started-at="2017-11-20T12:26:15Z" finished-at="2017-11-20T12:26:15Z">
+        <test-method status="PASS" signature="testGotoTickets()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@369f73a2]" name="testGotoTickets" duration-ms="458" started-at="2017-11-20T14:20:39Z" finished-at="2017-11-20T14:20:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGotoTickets -->
-        <test-method status="PASS" signature="testGotoTrash()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@370736d9]" name="testGotoTrash" duration-ms="713" started-at="2017-11-20T12:26:15Z" finished-at="2017-11-20T12:26:16Z">
+        <test-method status="PASS" signature="testGotoTrash()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@369f73a2]" name="testGotoTrash" duration-ms="616" started-at="2017-11-20T14:20:39Z" finished-at="2017-11-20T14:20:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGotoTrash -->
-        <test-method status="PASS" signature="testGotoUsers()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@370736d9]" name="testGotoUsers" duration-ms="551" started-at="2017-11-20T12:26:16Z" finished-at="2017-11-20T12:26:16Z">
+        <test-method status="PASS" signature="testGotoUsers()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@369f73a2]" name="testGotoUsers" duration-ms="557" started-at="2017-11-20T14:20:40Z" finished-at="2017-11-20T14:20:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGotoUsers -->
-        <test-method status="PASS" signature="tearDownAfterClass()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@370736d9]" name="tearDownAfterClass" is-config="true" duration-ms="680" started-at="2017-11-20T12:26:16Z" finished-at="2017-11-20T12:26:17Z">
+        <test-method status="PASS" signature="tearDownAfterClass()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@369f73a2]" name="tearDownAfterClass" is-config="true" duration-ms="800" started-at="2017-11-20T14:20:40Z" finished-at="2017-11-20T14:20:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAfterClass -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@370736d9]" name="tearDown" is-config="true" duration-ms="1" started-at="2017-11-20T12:26:17Z" finished-at="2017-11-20T12:26:17Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.emc.metalnx.integration.test.healthcheck.HealthCheckTest@369f73a2]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-11-20T14:20:51Z" finished-at="2017-11-20T14:20:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.emc.metalnx.integration.test.healthcheck.HealthCheckTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
