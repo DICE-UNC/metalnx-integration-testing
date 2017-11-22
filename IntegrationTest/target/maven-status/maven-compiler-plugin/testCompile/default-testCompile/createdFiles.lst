@@ -1,5 +1,0 @@
-com\emc\metalnx\test\generic\UiTestUtilities.class
-com\emc\metalnx\integration\test\healthcheck\HealthCheckTest.class
-com\emc\metalnx\integration\test\utils\HealthCheckUtils.class
-com\emc\metalnx\integration\test\login\AdminLoginTest.class
-com\emc\metalnx\integration\test\login\LoginTest.class
